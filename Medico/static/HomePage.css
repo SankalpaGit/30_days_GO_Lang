@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ECF3F4;
+}
+
+nav {
+    background-color: #ECF3F4;
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+.pagelink {
+    color: #03989E;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    margin: 0 40px;
+}
+
+.pagelink:hover {
+    color: #03989E;
+    text-decoration: none;
+}
+
+
+i {
+    color: #03989E;
+    margin: 0 40px;
+    font-size: 30px;
+}
+
+/* --------------------------------------------------------------main content---------------------------------------------------------------- */
+
+main {
+    margin-top: 8.5%;
+}
+
+.search {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    height: 5.5vh;
+    border: solid 2px #03989E;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 5);
+    outline: none;
+    
+}
+
+
+
+.outer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.shop-category {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    border: solid 3px#ecf2f4;
+    border-radius: 7%;
+}
+
+.shop-category:hover {
+    box-shadow: 0 2px 2px 0 #ecf2f4, 0 6px 20px 0 rgba(0, 0, 0, 0.6); /* Add box shadow with colors ecf2f4 and 000000 */
+    transition: transform 0.8s ease;
+    transform: scale(1.02);
+}
+
+
+.img-category {
+    height: 100%; 
+    width: 100%;
+    object-fit: cover; 
+}
+
+.spans {
+    color: #03989E; /* Changed color to black */
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%); /* Centering trick */
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* --------------------------------------------------------------footer content---------------------------------------------------------------- */
+
+footer{
+    height: 60vh;
+    margin-top: 5%;
+    border-top: solid 1px #03989E;
+}
+
+.above-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content{
+    margin-top: 2%;
+}
+
+.footer-content h5 {
+    color: #000;
+    font-family:'Arial';
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer-link{
+    margin-top:2px;
+}
+.footer-content a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #03989E;
+    font-weight: 600;
+    text-decoration: none;
+     transition: transform 0.4s ease;
+    transform: scale(1.1);
+}
+.payment {
+    display: flex;
+    margin-left: 10%;
+}
+.payment img {
+    height: 90px;
+    width: auto;
+    margin-right: 10px; /* Adjust as needed */
+}

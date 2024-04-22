@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ECF3F4;
+}
+
+nav {
+    background-color: #ECF3F4;
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+.pagelink {
+    color: #03989E;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    margin: 0 40px;
+}
+
+.pagelink:hover {
+    color: #03989E;
+    text-decoration: none;
+}
+
+
+i {
+    color: #03989E;
+    margin: 0 40px;
+    font-size: 30px;
+}
+
+/* ----------------------------------------------------Below Navigation bar content----------------------------------------------------*/
+.upperContent{
+    margin-top: 8%;   
+}
+
+.upperContent h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.btttomContent p{
+    font-weight: 700;
+    text-align: center;
+}
+
+.btContent p{
+    font-weight: 650;
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.thing2{
+    height: 90px;
+    width: 90%;
+    box-shadow: 2px 2px 15px 0 hsla(0,10%,77%,.5);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 1.5%;
+    padding: 25px;
+    color: #2a2929;
+}
+.buttons{
+    margin-left: 5%;
+    margin-top: 1%;
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+
+}
+button{
+    padding: 20px;
+    background-color: #03989E;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: #039e37c4;
+    color: white;
+    border: none;
+}
+.buttons2{
+    margin-left: 10%;
+}

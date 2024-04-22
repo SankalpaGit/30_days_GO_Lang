@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ECF3F4;
+}
+
+nav {
+    background-color: #ECF3F4;
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+.pagelink {
+    color: #03989E;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    margin: 0 40px;
+}
+
+.pagelink:hover {
+    color: #03989E;
+    text-decoration: none;
+}
+
+
+i {
+    color: #03989E;
+    margin: 0 40px;
+    font-size: 30px;
+}
+
+/* Remove body selector */
+
+.title {
+    margin-bottom: 5vh;
+}
+
+.card {
+    margin: auto;
+    max-width: 950px;
+    border-radius: 1rem;
+    margin-top: 10%;  
+    box-shadow: 0 2px 2px 0 #ecf2f4, 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cart {
+    background-color: #fff;
+    padding: 4vh 4vh;
+}
+
+.summary {
+    background-color: #dddddd;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 4vh;
+    color: black;
+}
+
+.main {
+    padding: 2vh 0;
+    width: 100%;
+}
+
+.back-to-shop {
+    margin-top: 4.5rem;
+}
+
+form {
+    padding: 2vh 0;
+}
+
+select, input {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1.5vh 1vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+
+input {
+    margin-bottom: 4vh;
+}
+
+.btn {
+    background-color: black  !important;
+    border-color: #000;
+    color: white !important;
+    width: 100%;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    margin-top: 4vh;
+    padding: 1.2vh !important;
+    border-radius: 0;
+}
+
+.btn:hover {
+    background-color: rgb(36, 154, 4) !important;
+}
+.quantity-button {
+    border: none; /* Remove border */
+    background-color: transparent; /* Ensure background is transparent */
+    font-size: 1.9rem; /* Increase font size */
+    padding: 0.3rem 0.5rem; 
+}

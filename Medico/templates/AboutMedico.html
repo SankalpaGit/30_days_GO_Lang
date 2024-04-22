@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "About.css" %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="{% url "Home" %}"><img src="{% static "images/logo.png" %}"alt="Your Image" class="logo"></a>
+            <a href="{% url "products" %}" class="pagelink">E Pharmacy</a>
+            <a href="{% url "blood" %}" class="pagelink">E Blood Bank</a>
+            <a href="{% url "chats" %}" class="pagelink">Medico Chat</a>
+            <a href="{% url "aboutus" %}" class="pagelink">About Us</a>
+            <a href="{% url "persons" %}" class="pagelink"><i class="bi bi-person"></i></a>
+            <a href="{% url "view_cart" %}" class="pagelink"><i class="bi bi-cart"></i></a>
+        </nav>
+    </header>
+
+   {% comment %}================================ main================================ {% endcomment %}
+
+    <div class="upper">
+        <div class="text">
+            <h2 class="text1">Welcome to our journey</h2>
+            <h5 class="text2">
+                " Journey of Medico as startup platform "
+                " To digitalized Nepal in Medical sector "
+            </h5>
+        </div>
+        <div class="img">
+            <img src={% static "images/414.jpg" %} alt="" class="imgtop">
+        </div>
+    </div>
+
+    <div class="upper-content">
+        <p class="upper-content-text">Welcome to our journey with Medico, a pioneering startup platform dedicated to
+            revolutionizing Nepal's pharmacy and blood bank sector. Our mission is clear to digitalize Nepal's
+            healthcare landscape, ushering in a new era of accessibility and efficiency. Through innovative technologies
+            and strategic partnerships, we aim to streamline medical services, making them more accessible to every
+            corner of Nepal. Our journey begins with a steadfast commitment to leveraging technology for the betterment
+            of healthcare, ensuring that no one is left behind in this digital age. With a focus on empowerment and
+            inclusivity, we strive to bridge the gap between patients and healthcare providers, fostering a seamless
+            connection that transcends geographical barriers. Together, we embark on this transformative journey, driven
+            by the vision of a healthier, digitally empowered Nepal. Join us as we pave the way for a brighter future in
+            the medical sector.</p>
+    </div>
+
+    <div class="thing1">
+        <div class="T1-top">
+            <h4 class="T1-top-head">Order Your Medicine and Health Care with Medico</h4>
+            <p 
+                style="margin-left: 11px; text-align: justify;">Medico offers 1000+ wide range medical product from the
+                Regular used healthcare and sanitory item to the complex formula medicinal drugs.Our aim is to make
+                Nepal a digitalized pharmacy and to reach the every poosible cornor of the Nepal.You can place the order
+                via out website and we will deliver your product in low as possible.</p>
+
+            <p style="margin-left: 7px;">We do provide Cash On Delivery or you can pay online.</p>
+            
+            <button 
+                style="color: #03989E; font-weight: 700; border:solid 2px #03989E ;height: 50px; background-color: white; margin-left: 5px; border-radius: 7px;">
+                Order Your Medicine > </button>
+        </div>
+        <div class="T1-below">
+
+        </div>
+    </div>
+
+    <div class="thing2">
+        <h4> Lets come together on the mission of saving life : "Request or Donate Blood"</h4>
+    </div>
+   
+
+    <footer>
+        <div class="above-footer">
+            <div class="footer-content">
+                <h5>Our Services</h5>
+                <a href="" class="footer-link">Order Medicine</a>
+                <a href="" class="footer-link">Donate Blood</a>
+                <a href="" class="footer-link">Request Blood</a>
+                <a href="" class="footer-link">Chat with Us</a>
+                <a href="" class="footer-link">View the Cart</a>
+                <a href="" class="footer-link">See Your Profile</a>
+            </div>
+
+            <div class="footer-content">
+                <h5>Featured Category</h5>
+                <a href="" class="footer-link">Regular Care</a>
+                <a href="" class="footer-link">Fever and Flu</a>
+                <a href="" class="footer-link">Covid Care</a>
+                <a href="" class="footer-link">Women Care</a>
+                <a href="" class="footer-link">Cardio Care</a>
+            </div>
+
+            <div class="footer-content">
+                <h5>Company & Policy</h5>
+                <a href="" class="footer-link">About Medico</a>
+                <a href="" class="footer-link">Terms and Condition</a>
+                <a href="" class="footer-link">Partner with Us</a>
+                <a href="" class="footer-link">Return Policy</a>
+                <a href="" class="footer-link">Secuirity Policy</a>
+            </div>
+        </div>
+        
+        <h4 style="color: #000; font-weight: 500; margin-left:22vh;margin-top:8vh;">Our Payment Partners</h4>
+        <div class="payment">
+            <img src="{% static "images/esewa_og.png" %}" alt="E-sewa" class="Gateway">
+            <img src="{% static "images/khalti.png" %}" alt="Khalti" class="Gateway">
+            <img src="{% static "images/fone.png" %}" alt="FonePay" class="Gateway">
+            <img src="{% static "images/impe.png" %}" alt="IME Pay" class="Gateway">
+        </div> 
+        <p class="Copyright" style="text-align: center; color: #000; font-weight: 500;">© Medico 2024, All Right
+            Reserved</p>
+    </footer>
+</body>
+
+</html>
