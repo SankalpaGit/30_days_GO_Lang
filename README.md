@@ -1,6 +1,8 @@
+# Resources
 
-        <a href="https://go.dev/doc/"> Go official Documentation</a>
-        <a href="https://www.w3schools.com/go/"> W3 Schools</a>
+- [Go official Documentation](https://go.dev/doc/)
+- [W3Schools Go Tutorial](https://www.w3schools.com/go/)
+
 
 <h1>What is Go?</h1>
 
