@@ -1,6 +1,7 @@
-<h1>Some Resource to Learn</h1>
-        - [Go official Documentation](https://go.dev/doc/)
-        - [W3Schools Go Tutorial](https://www.w3schools.com/go/)
+# Resources
+
+- [Go official Documentation](https://go.dev/doc/)
+- [W3Schools Go Tutorial](https://www.w3schools.com/go/)
 
 <h1>What is Go?</h1>
 
@@ -50,8 +51,18 @@
 If a variable should have a fixed value that cannot be changed, you can use the const keyword.<br>
 The const keyword declares the variable as "constant", which means that it is unchangeable and read-only.
 
+
 <h1>Type of the const keyword</h1>
 
         - Typed Const: where the dataype is declaare for the const variable.
         - UnTyped Const: where the dataype is not declaare for the const variable.
 
+<h1> Loops in Go Language</h1>
+        <h2>For Loops in Go Language </h2>
+                - The for loop can take up to three statements:
+                        st1: Initializes the loop counter value.
+                        st2: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
+                        st3: Increases the loop counter value.
+
+        - The continue statement is used to skip one or more iterations in the loop. It then continues with the next iteration in the loop.
+        - The break statement is used to break/terminate the loop execution.
