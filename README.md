@@ -58,11 +58,9 @@ The const keyword declares the variable as "constant", which means that it is un
         - UnTyped Const: where the dataype is not declaare for the const variable.
 
 <h1> Loops in Go Language</h1>
-        <h2>For Loops in Go Language </h2>
-                - The for loop can take up to three statements:
-                        st1: Initializes the loop counter value.
-                        st2: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
-                        st3: Increases the loop counter value.
+        
+        For Loops in Go Language 
+        - The for loop can take up to three statements:
 
         - The continue statement is used to skip one or more iterations in the loop. It then continues with the next iteration in the loop.
         - The break statement is used to break/terminate the loop execution.
