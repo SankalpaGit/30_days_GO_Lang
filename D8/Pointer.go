@@ -2,19 +2,16 @@ package main
 
 import "fmt"
 
-func updateElement(arr *[3]int, index int, newValue int) {
-	if index >= 0 && index < len(arr) {
-		(*arr)[index] = newValue
-	} else {
-		fmt.Println("Index out of range")
-	}
-}
-
 func main() {
-	array := [3]int{10, 20, 30}
+	array := [5]int{1, 2, 3, 4, 5}
+
 	fmt.Println("Original array:", array)
 
-	updateElement(&array, 0, 200)
+	ptr1 := &array[0]
+	ptr2 := &array[1]
 
-	fmt.Println("Updated array:", array)
+	*ptr1 = 100
+	*ptr2 = 200
+
+	fmt.Println("Modified array:", array)
 }
