@@ -64,3 +64,7 @@ The const keyword declares the variable as "constant", which means that it is un
 
         - The continue statement is used to skip one or more iterations in the loop. It then continues with the next iteration in the loop.
         - The break statement is used to break/terminate the loop execution.
+
+<H1> What are Goroutines?</H1>
+        Goroutines: Lightweight, managed threads of execution.
+        Go uses a model where goroutines are multiplexed onto a smaller number of OS threads managed by the Go runtime.
