@@ -34,7 +34,14 @@ func (tm *TaskManager) AddTask(description string, deadline time.Time) {
 }
 
 func (tm *TaskManager) DeleteTask(id int) {
-
+	tm.mu.Lock()
+	defer tm.mu.Unlock()
+	if _, exists := tm.tasks[id]; exists {
+		delete(tm.tasks, id)
+		fmt.Printf("Task with ID %d deleted.\n", id)
+	} else {
+		fmt.Printf("Task with ID %d not found.\n", id)
+	}
 }
 
 func (tm *TaskManager) ViewTasks() {
