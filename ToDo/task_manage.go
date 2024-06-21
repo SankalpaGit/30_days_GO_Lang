@@ -45,5 +45,14 @@ func (tm *TaskManager) DeleteTask(id int) {
 }
 
 func (tm *TaskManager) ViewTasks() {
-
+	tm.mu.Lock()
+	defer tm.mu.Unlock()
+	if len(tm.tasks) == 0 {
+		fmt.Println("No tasks available.")
+		return
+	}
+	fmt.Println("Tasks:")
+	for _, task := range tm.tasks {
+		fmt.Println(task)
+	}
 }
