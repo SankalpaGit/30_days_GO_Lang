@@ -1,4 +1,4 @@
-# Resources
+# Resources used
 
 - [Go official Documentation](https://go.dev/doc/)
 - [W3Schools Go Tutorial](https://www.w3schools.com/go/)
