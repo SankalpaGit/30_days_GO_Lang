@@ -13,27 +13,30 @@ var (
 )
 
 func main() {
-	http.HandleFunc("/", HomeHandler)
-	http.HandleFunc("/books", BookListHandler)
-	http.HandleFunc("/addbook", AddBookHandler)
+	// Serve static files from the "static" directory
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
+	// Define handlers for dynamic content
+	http.HandleFunc("/", homeHandler)
+	http.HandleFunc("/books", bookListHandler)
+	http.HandleFunc("/addbook", addBookHandler)
+
+	// Start the server
 	http.ListenAndServe(":8080", nil)
 }
 
-// HomeHandler serves the home.html file
-func HomeHandler(w http.ResponseWriter, r *http.Request) {
+// Handlers
+func homeHandler(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "home.html", nil)
 }
 
-// BookListHandler serves the booklist.html file with the list of books
-func BookListHandler(w http.ResponseWriter, r *http.Request) {
+func bookListHandler(w http.ResponseWriter, r *http.Request) {
 	mu.Lock()
 	defer mu.Unlock()
 	renderTemplate(w, "booklist.html", books)
 }
 
-// AddBookHandler serves addbook.html for GET and processes form for POST
-func AddBookHandler(w http.ResponseWriter, r *http.Request) {
+func addBookHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 		title := r.FormValue("title")
 		if title != "" {
@@ -47,7 +50,7 @@ func AddBookHandler(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "addbook.html", nil)
 }
 
-// renderTemplate renders the specified template with the given data
+// Helper function to render templates
 func renderTemplate(w http.ResponseWriter, tmpl string, data interface{}) {
 	err := tmplCache.ExecuteTemplate(w, tmpl, data)
 	if err != nil {
